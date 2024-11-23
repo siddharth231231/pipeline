@@ -17,4 +17,17 @@ public class NewTest {
       driver.get("https://www.google.com");
       Thread.sleep(5000);
   }
+  
+  @Test
+  public void f1() throws InterruptedException {
+	  
+	  WebDriverManager.chromedriver().setup();
+
+      // Create a new instance of ChromeDriver
+      WebDriver driver = new ChromeDriver();
+
+      // Launch a URL
+      driver.get("https://www.google.com");
+      Thread.sleep(5000);
+  }
 }
